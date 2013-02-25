@@ -35,7 +35,6 @@ function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
 //                HeadRow = tblHeadObj.rows[0];
 //            }
 //
-//
 //            newHeadCell = HeadRow.insertCell(index);
 //            newHeadCell.innerHTML = 'Char=' + htmlTable.currChar.char;
 
