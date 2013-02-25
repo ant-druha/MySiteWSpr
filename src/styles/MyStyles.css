@@ -1,0 +1,7 @@
+img.tryshe {
+    width:50px;
+    height:50px;
+    display:block;
+}
+td, tr, img  { padding: 0px; margin: 0px; border: none; }
+table { border-collapse: collapse; }

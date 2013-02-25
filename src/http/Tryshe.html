@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../styles/MyStyles.css" rel="stylesheet"/>
+    <title>Tryshe</title>
+    <script type="text/javascript" src="../scripts/Tryshe.js"></script>
+    <script type="text/javascript">
+
+        var
+                htmlTab,
+                htmlImgZero = '<img class="tryshe" src="../Images/Tryshe_cell_zero.jpg" />',
+                htmlImgOne = '<img class="tryshe" src="../Images/Tryshe_cell_one.jpg" />';
+
+
+        function onLoad() { //id, rows, cols, htmlzero, htmlone
+            htmlTab = new HtmlTableCells("CellsTab", 0, 0, htmlImgZero, htmlImgOne);
+        }
+
+        function displayChar() {
+            var
+                    txtLine = document.getElementById("txtLine"),
+                    ch = txtLine.value.charAt(txtLine.value.length - 1);
+            if (ch == "") {
+
+            }
+            htmlTab.displayCharAt(ch, (txtLine.value.length - 1) < 0 ? 0 : txtLine.value.length - 1);
+        }
+
+    </script>
+</head>
+<body id="body" onload="onLoad();">
+<input id="txtLine" type="text" size="40" onkeyup="displayChar();" />
+<table id="CellsTab">
+</table>
+</body>
+</html>
