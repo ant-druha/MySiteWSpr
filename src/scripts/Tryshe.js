@@ -1,7 +1,9 @@
 function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
     // attributes
     this.currChar = null;
+    this.currChar = null;
     this.tableRoot = document.getElementById(id);
+    this.currChar = null;
     this.htmlImgZero = htmlZero;
     this.htmlImgOne = htmlOne;
 
